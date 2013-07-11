@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title><%= @title || "Paduhost" %></title>
+        <meta name="descriptoin" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- konten ditaruh disini -->
+        <div id="header">
+            <div class="bungkus">
+                <div class="baris">
+                    <div id="logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <%= erb :nav %>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="baris">
+            <div id="slide">
+                    
+                <p>
+                    <%=
+                        if defined?(@title)
+                            "<strong>#{@title}</strong>" 
+                        else
+                            @slogan
+                        end
+                        %>      
+                </p>            
+            </div> <!-- .slide -->          
+        </div><!-- .baris -->
+
+        <div id="konten">
+            <div class="bungkus">
+                <%= yield %>
+            </div><!-- bungkus -->
+        </div><!-- konten -->
+        <div id="aside">
+            <div class="baris">
+                <div class="bungkus">
+                    <div class="zeen-5 kontak" >
+                        <img src="img/logo-footer.png" alt="paduhost">
+                        <p style="margin-left:0">
+                          Paduhost adalah penyedia hosting dan multimedia. Kami mempunyai berbagai macam paket sesuai dengan kebutuhan anda dan keperluan perusahaan anda
+                        </p>
+                    </div>
+                    <div class="zeen-3">   
+                        <h2>Kontak Kami</h2>
+                        <i class="foundicon-home"></i>
+                        <p>Jl. Pangeran Samudera No.16A Banjarmasin Kalimantan Selatan  70123 </p>
+
+                        <i class="foundicon-mail"></i>
+                        <p>info@paduhost.co.id</p>
+
+                        <i class="foundicon-phone"></i>
+                        <p>+6281251543201</p>
+
+                    </div>
+                    <div class="zeen-2">
+                        <h2>Detail Paduhost</h2> 
+                        <ul class="jejaring">
+                             <li><a href="#">Login Member</a></li>
+                             <li><a href="#">Kebijakan Privasi</a></li>
+                             <li><a href="#">Terms of Service</a></li>
+                             <li><a href="#">Privacy Policy</a></li>
+                             <li><a href="/kontak ">Kontak</a></li>
+                         </ul> 
+                    </div>
+                    <div class="zeen-2">
+                        <h2>Jejaring Sosial</h2>
+                        <ul class="jejaring">
+                             <li><a href="#">Facebook</a></li>
+                             <li><a href="#">Twitter</a></li>
+                             <li><a href="#">Google +</a></li>
+                             <li><a href="#">Diaspora</a></li>
+                         </ul> 
+                    </div>    
+                                    
+                </div><!-- bungkus -->
+            </div><!-- baris -->
+        </div>
+        <div id="footer">
+            <div class="baris">
+                <div class="bungkus">
+                    <p>&copy;2013 Paduhost.com - Layanan hosting murah Indonesia</p> 
+
+                    <ul class="kredit">
+                          <li><a href="http://www.ruby-lang.org"><img src="/img/footer-icon/ruby.png" alt=""></a></li>
+                          <li><a href="http://compass-style.org"><img src="/img/footer-icon/compass.png" alt=""></a></li>
+                          <li><a href="http://zeen-studio.com"><img src="/img/footer-icon/zeen.png" alt=""></a></li>
+                          <li><a href="#"><img src="/img/footer-icon/zeengrid.png" alt=""></a></li>
+                      </ul>  
+                </div>    
+            </div>
+            
+           
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
