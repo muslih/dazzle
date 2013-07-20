@@ -1,0 +1,51 @@
+body{
+	background: darken(#fff,3%); //image-url('bg.png') left top;
+}
+
+a{
+	color: $mainColor;
+}
+
+/*******************************************************************************/
+/*     header
+/*******************************************************************************/
+
+header{
+	border-top: solid 15px $mainColor;
+	@include box-shadow(2px 0 20px lighten($secColor,20%));
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+	background: #fff;
+}
+
+.logo{
+	float: left;
+}
+nav{
+	float: right;
+	// margin-top: 20px;
+	li{
+		float: left;
+		list-style: none;
+		a{
+			@include main-transition;
+			display: block;
+			padding: 35px 10px;
+			color: $secColor;
+			text-decoration: none;
+			&:hover{
+				color: $thirdColor;
+				background: $mainColor;
+			}
+		}
+	}
+}
+
+/*******************************************************************************/
+/*     section
+/*******************************************************************************/
+
+section.bungkus{
+	padding-top: 125px;
+}

@@ -1,0 +1,7 @@
+@mixin main-box-shadow($n:5px){
+	@include border-radius($n);
+}
+
+@mixin main-transition($s:0.5s){
+	@include transition-duration($s);
+}
