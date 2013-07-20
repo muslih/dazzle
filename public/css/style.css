@@ -340,7 +340,7 @@ img {
   }
 }
 body {
-  background: #f7f7f7;
+  background: #fafafa;
 }
 
 a {
@@ -391,7 +391,14 @@ nav li a:hover {
 /*     section
 /*******************************************************************************/
 section.bungkus {
-  padding-top: 125px;
+  padding-top: 50px;
+}
+
+#slide .zeen-6 {
+  padding-top: 70px;
+}
+#slide img {
+  float: right;
 }
 
 /*******************************************************************************/
