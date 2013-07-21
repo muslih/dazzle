@@ -5,3 +5,16 @@
 @mixin main-transition($s:0.5s){
 	@include transition-duration($s);
 }
+
+@mixin main-font{
+	font-family: 'Armata', sans-serif;
+}
+
+@mixin tombol($bg:$mainColor,$col: #fff,$size:$mainFontSize){
+	background: $bg;
+	@include border-radius(5px);
+	color:$col;
+	font-size: $size;
+	padding: 10px;
+	border: 0px;
+}
