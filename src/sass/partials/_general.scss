@@ -73,7 +73,7 @@ section.bungkus{
 		line-height: 20px;
 	}
 	.zeen-7{
-		padding-top: 70px;
+		padding-top: 80px;
 	}
 	img{
 		float: right;
@@ -81,6 +81,7 @@ section.bungkus{
 }
 
 #paket{
+	@include border-radius(5px);
 	background: #fff;
 	padding:10px;
 	@include box-shadow;
