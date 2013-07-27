@@ -422,7 +422,7 @@ section.bungkus {
   line-height: 20px;
 }
 #slide .zeen-7 {
-  padding-top: 80px;
+  padding-top: 85px;
 }
 #slide img {
   float: right;
@@ -434,11 +434,16 @@ section.bungkus {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  background: #fff;
+  overflow: hidden;
+}
+#paket section {
+  color: #fff;
+  padding: 5px;
+  overflow: hidden;
+  background: #d80000;
+}
+#paket .wrap {
   padding: 10px;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
 }
 
 /*******************************************************************************/
