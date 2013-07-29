@@ -7,12 +7,13 @@ a{
 }
 
 button{
-	background: $mainColor;
-	@include border-radius(5px);
-	color: #fff;
-	font-size: $mainFontSize;
-	padding: 10px;
-	border: 0px;
+	@include tombol;
+	// background: $mainColor;
+	// @include border-radius(5px);
+	// color: #fff;
+	// font-size: $mainFontSize;
+	// padding: 10px;
+	// border: 0px;
 }
 
 /*******************************************************************************/
@@ -81,11 +82,20 @@ section.bungkus{
 }
 
 #paket{
+	@include box-shadow(0px -10px 0 #444 inset);
 	@include border-radius(5px);
+	font-size: $mainFontSize;
+	line-height: $mainLineHeight;
 	// background: #fff;
 	// padding:10px;
 	overflow: hidden;
 	// @include box-shadow;
+
+	h2{
+		margin-top: 0;
+		// padding: 10px;
+		// background: darken($mainColor,10%);
+	}
 
 	section{
 		color: #fff;

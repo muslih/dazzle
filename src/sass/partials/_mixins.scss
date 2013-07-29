@@ -11,10 +11,15 @@
 }
 
 @mixin tombol($bg:$mainColor,$col: #fff,$size:$mainFontSize){
+	@include main-transition;
 	background: $bg;
 	@include border-radius(5px);
 	color:$col;
 	font-size: $size;
 	padding: 10px;
 	border: 0px;
+
+	&:hover{
+		background: darken($bg,5%);
+	}
 }
