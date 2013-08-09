@@ -347,6 +347,11 @@ a {
   color: #d80000;
 }
 
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .kanan {
   float: right;
 }
@@ -377,6 +382,10 @@ button:hover {
 
 h1, h2 {
   font-family: 'Armata', sans-serif;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 .garis {
@@ -453,10 +462,10 @@ section.bungkus {
 }
 #slide p {
   font-size: 15px;
-  line-height: 20px;
+  line-height: 25px;
 }
 #slide .zeen-7 {
-  padding-top: 85px;
+  padding-top: 80px;
 }
 #slide img {
   float: right;
@@ -527,6 +536,24 @@ section.bungkus {
 }
 #support:hover > img {
   opacity: 1;
+}
+
+/*******************************************************************************/
+/*     aside
+/*******************************************************************************/
+aside h2 {
+  font-size: 16px;
+}
+aside li {
+  list-style: none;
+}
+aside ul {
+  padding: 0;
+}
+aside ul a {
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 25px;
 }
 
 /*******************************************************************************/
