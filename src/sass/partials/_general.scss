@@ -1,5 +1,5 @@
 body{
-	background: darken(#fff,2%); //image-url('bg.png') left top;
+	background: $bg; //image-url('bg.png') left top;
 }
 
 a{
@@ -15,7 +15,20 @@ button{
 	// padding: 10px;
 	// border: 0px;
 }
+h1,h2{
+	font-family: 'Armata', sans-serif;
+}
 
+.garis{
+	text-align: center;
+	&:after{
+		margin-top: -18px;
+		content:"";
+		border-top: 1px solid darken($bg,20%);
+		display: block;
+		clear: both;
+	}
+}
 /*******************************************************************************/
 /*     header
 /*******************************************************************************/
@@ -82,8 +95,9 @@ section.bungkus{
 }
 
 #paket{
-	@include box-shadow(0px -10px 0 #444 inset);
+	@include box-shadow(0px 75px 0 -30px darken($mainColor,15%) inset);
 	@include border-radius(5px);
+	background: $mainColor;
 	font-size: $mainFontSize;
 	line-height: $mainLineHeight;
 	// background: #fff;
@@ -93,17 +107,27 @@ section.bungkus{
 
 	h2{
 		margin-top: 0;
+		color:darken($thirdColor,20%);
 		// padding: 10px;
 		// background: darken($mainColor,10%);
+		span{
+			color: $thirdColor;
+		}
 	}
 
 	section{
 		color: #fff;
 		padding: 5px;
 		overflow: hidden;
-		background: $mainColor;
+		
 	}
 	.wrap{
 		padding: 10px;
+	}
+}
+
+#fitur{
+	button{
+		@include box-shadow(0 0 0 5px $bg);
 	}
 }

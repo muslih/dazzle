@@ -367,6 +367,21 @@ button:hover {
   background: #bf0000;
 }
 
+h1, h2 {
+  font-family: 'Armata', sans-serif;
+}
+
+.garis {
+  text-align: center;
+}
+.garis:after {
+  margin-top: -18px;
+  content: "";
+  border-top: 1px solid #c7c7c7;
+  display: block;
+  clear: both;
+}
+
 /*******************************************************************************/
 /*     header
 /*******************************************************************************/
@@ -436,29 +451,39 @@ section.bungkus {
 }
 
 #paket {
-  -webkit-box-shadow: 0px -10px 0 #444444 inset;
-  -moz-box-shadow: 0px -10px 0 #444444 inset;
-  box-shadow: 0px -10px 0 #444444 inset;
+  -webkit-box-shadow: 0px 75px 0 -30px darkred inset;
+  -moz-box-shadow: 0px 75px 0 -30px darkred inset;
+  box-shadow: 0px 75px 0 -30px darkred inset;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  background: #d80000;
   font-size: 14px;
   line-height: 20px;
   overflow: hidden;
 }
 #paket h2 {
   margin-top: 0;
+  color: #cccccc;
+}
+#paket h2 span {
+  color: white;
 }
 #paket section {
   color: #fff;
   padding: 5px;
   overflow: hidden;
-  background: #d80000;
 }
 #paket .wrap {
   padding: 10px;
+}
+
+#fitur button {
+  -webkit-box-shadow: 0 0 0 5px #fafafa;
+  -moz-box-shadow: 0 0 0 5px #fafafa;
+  box-shadow: 0 0 0 5px #fafafa;
 }
 
 /*******************************************************************************/
