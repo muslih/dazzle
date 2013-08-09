@@ -424,6 +424,10 @@ nav li a:hover {
   color: white;
   background: #d80000;
 }
+nav li a.active {
+  border-bottom: 5px solid #d80000;
+  padding: 40px 10px 25px 10px;
+}
 
 /*******************************************************************************/
 /*     section
@@ -480,6 +484,13 @@ section.bungkus {
   padding: 10px;
 }
 
+#fitur {
+  margin: 25px 0;
+}
+#fitur h2 {
+  color: #d80000;
+  margin: 5px 0;
+}
 #fitur button {
   -webkit-box-shadow: 0 0 0 5px #fafafa;
   -moz-box-shadow: 0 0 0 5px #fafafa;

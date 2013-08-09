@@ -64,6 +64,10 @@ nav{
 				color: $thirdColor;
 				background: $mainColor;
 			}
+			&.active{
+				border-bottom: 5px solid $mainColor;
+				padding: 40px 10px 25px 10px;
+			}
 		}
 	}
 }
@@ -127,6 +131,11 @@ section.bungkus{
 }
 
 #fitur{
+	margin: 25px 0;
+	h2{
+		color: $mainColor;
+		margin: 5px 0;
+	}
 	button{
 		@include box-shadow(0 0 0 5px $bg);
 	}
