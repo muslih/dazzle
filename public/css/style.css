@@ -347,6 +347,14 @@ a {
   color: #d80000;
 }
 
+.kanan {
+  float: right;
+}
+
+.kiri {
+  float: left;
+}
+
 button {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -416,7 +424,7 @@ nav li a {
   font-family: 'Armata', sans-serif;
   font-size: 14px;
   display: block;
-  padding: 40px 10px 30px 10px;
+  padding: 35px 10px 36px 10px;
   color: #444444;
   text-decoration: none;
 }
@@ -426,7 +434,7 @@ nav li a:hover {
 }
 nav li a.active {
   border-bottom: 5px solid #d80000;
-  padding: 40px 10px 25px 10px;
+  padding: 35px 10px 31px 10px;
 }
 
 /*******************************************************************************/
@@ -519,6 +527,13 @@ section.bungkus {
 }
 #support:hover > img {
   opacity: 1;
+}
+
+/*******************************************************************************/
+/*     footer
+/*******************************************************************************/
+footer {
+  border-top: 1px solid #c7c7c7;
 }
 
 /*******************************************************************************/
