@@ -551,9 +551,16 @@ aside ul {
   padding: 0;
 }
 aside ul a {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
   font-size: 14px;
   text-decoration: none;
   line-height: 25px;
+}
+aside ul a:hover {
+  color: #a50000;
 }
 
 /*******************************************************************************/
