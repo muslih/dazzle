@@ -364,7 +364,7 @@ button {
   border: 0px;
 }
 button:hover {
-  background: #bf0000;
+  background: #a50000;
 }
 
 h1, h2 {
@@ -455,9 +455,9 @@ section.bungkus {
 }
 
 #paket {
-  -webkit-box-shadow: 0px 75px 0 -30px darkred inset;
-  -moz-box-shadow: 0px 75px 0 -30px darkred inset;
-  box-shadow: 0px 75px 0 -30px darkred inset;
+  -webkit-box-shadow: 0px 75px 0 -30px #a50000 inset;
+  -moz-box-shadow: 0px 75px 0 -30px #a50000 inset;
+  box-shadow: 0px 75px 0 -30px #a50000 inset;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -484,6 +484,9 @@ section.bungkus {
   padding: 10px;
 }
 
+/*******************************************************************************/
+/*     fitur
+/*******************************************************************************/
 #fitur {
   margin: 25px 0;
 }
@@ -495,6 +498,27 @@ section.bungkus {
   -webkit-box-shadow: 0 0 0 5px #fafafa;
   -moz-box-shadow: 0 0 0 5px #fafafa;
   box-shadow: 0 0 0 5px #fafafa;
+}
+
+/*******************************************************************************/
+/*     support
+/*******************************************************************************/
+#support {
+  margin: 25px 0;
+  padding: 25px 0;
+  text-align: center;
+  background: #fff;
+}
+#support img {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 0.5;
+  margin: 0 5px;
+}
+#support:hover > img {
+  opacity: 1;
 }
 
 /*******************************************************************************/

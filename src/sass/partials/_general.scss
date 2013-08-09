@@ -99,7 +99,7 @@ section.bungkus{
 }
 
 #paket{
-	@include box-shadow(0px 75px 0 -30px darken($mainColor,15%) inset);
+	@include box-shadow(0px 75px 0 -30px darken($mainColor,10%) inset);
 	@include border-radius(5px);
 	background: $mainColor;
 	font-size: $mainFontSize;
@@ -130,8 +130,12 @@ section.bungkus{
 	}
 }
 
+/*******************************************************************************/
+/*     fitur
+/*******************************************************************************/
+
 #fitur{
-	margin: 25px 0;
+	margin: $mainSectionMargin;
 	h2{
 		color: $mainColor;
 		margin: 5px 0;
@@ -139,4 +143,26 @@ section.bungkus{
 	button{
 		@include box-shadow(0 0 0 5px $bg);
 	}
+}
+
+/*******************************************************************************/
+/*     support
+/*******************************************************************************/
+
+#support{
+	// @include transition-duration(1s);
+	margin: $mainSectionMargin;
+	padding: 25px 0;
+	text-align: center;
+	background: #fff;
+	img{
+		@include transition-duration(1s);
+		opacity:0.5;
+		margin: 0 5px;
+	}
+	&:hover>img{
+		// @include transition-duration(1s);
+		opacity:1;
+	}
+
 }
