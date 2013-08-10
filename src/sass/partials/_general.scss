@@ -33,7 +33,7 @@ h1,h2{
 }
 
 h2{
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .garis{
@@ -168,7 +168,8 @@ section.bungkus{
 
 #support{
 	// @include transition-duration(1s);
-	margin: $mainSectionMargin;
+	// margin: $mainSectionMargin;
+	margin-top: 25px;
 	padding: 25px 0;
 	text-align: center;
 	background: #fff;
@@ -188,17 +189,22 @@ section.bungkus{
 /*     aside
 /*******************************************************************************/
 aside{
+	margin: $mainSectionMargin;
+	overflow: hidden;
 	h2{
-		font-size: 16px;
+		margin-bottom: 0;
 	}
 	li{
 		list-style: none;
+	}
+	p,ul{
+		margin: 5px 0;
 	}
 	ul{
 		padding:0;
 		a{
 			@include transition-duration(1s);
-			font-size: 14px;
+			font-size: 13px;
 			text-decoration: none;
 			line-height: 25px;
 			&:hover{
