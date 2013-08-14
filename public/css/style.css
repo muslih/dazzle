@@ -511,6 +511,9 @@ section.bungkus {
   color: #d80000;
   margin: 5px 0;
 }
+#fitur p {
+  margin-top: 0;
+}
 #fitur button {
   -webkit-box-shadow: 0 0 0 5px #fafafa;
   -moz-box-shadow: 0 0 0 5px #fafafa;
