@@ -492,13 +492,60 @@ section.bungkus {
 #paket h2 span {
   color: white;
 }
+#paket p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  float: left;
+  font-size: 25px;
+}
+#paket p:before {
+  content: "Rp.";
+}
+#paket p span {
+  color: white;
+  font-size: 17px;
+}
+#paket ul {
+  padding: 0;
+  #border-bottom: 1px solid white;
+}
+#paket li {
+  font-family: 'Armata', sans-serif;
+  list-style: none;
+  line-height: 25px;
+  font-weight: bold;
+}
+#paket li span {
+  font-family: arial, sans-serif;
+  font-weight: normal;
+}
 #paket section {
   color: #fff;
-  padding: 5px;
+  padding: 5px 5px 15px 5px;
   overflow: hidden;
 }
 #paket .wrap {
   padding: 10px;
+}
+#paket button {
+  float: right;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  color: #d80000;
+  font-size: 14px;
+  padding: 10px;
+  border: 0px;
+}
+#paket button:hover {
+  background: #e6e6e6;
 }
 
 /*******************************************************************************/

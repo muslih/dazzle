@@ -136,14 +136,49 @@ section.bungkus{
 		}
 	}
 
+	p{
+		font-weight: bold;
+		margin-bottom: 5px;
+		float: left;
+		font-size: 25px;
+		&:before{
+			content:"Rp.";
+		}
+		span{
+			color: $thirdColor;
+			font-size: 17px;
+		}
+	}
+
+	ul{
+		padding: 0;
+		#border-bottom: 1px solid $thirdColor;
+	}
+
+	li{
+		font-family: 'Armata', sans-serif;
+		list-style: none;
+		line-height: 25px;
+		font-weight: bold;
+		span{
+			font-family: arial, sans-serif;
+			font-weight: normal;
+		}
+	}
+
 	section{
 		color: #fff;
-		padding: 5px;
+		padding: 5px 5px 15px 5px;
 		overflow: hidden;
 		
 	}
 	.wrap{
 		padding: 10px;
+	}
+	
+	button{
+		float: right;
+		@include tombol($bg:#fff,$col: $mainColor)
 	}
 }
 
