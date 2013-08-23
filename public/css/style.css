@@ -587,6 +587,9 @@ section.bungkus {
   margin: 0 5px;
 }
 #support:hover > img {
+  opacity: 0.7;
+}
+#support:hover > img:hover {
   opacity: 1;
 }
 
@@ -627,6 +630,28 @@ aside ul a:hover {
 /*******************************************************************************/
 footer {
   border-top: 1px solid #c7c7c7;
+}
+footer .kredit {
+  text-align: right;
+  float: right;
+}
+footer .kredit li {
+  display: inline-table;
+  margin-left: 15px;
+}
+footer .kredit li img {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  opacity: 0.7;
+  float: left;
+}
+footer .kredit li img:hover {
+  opacity: 1;
+}
+footer .kredit li:first-child {
+  margin-left: 0;
 }
 
 /*******************************************************************************/
