@@ -481,6 +481,7 @@ section.bungkus {
   -o-border-radius: 5px;
   border-radius: 5px;
   background: #d80000;
+  font-family: 'Armata', sans-serif;
   font-size: 14px;
   line-height: 20px;
   overflow: hidden;
@@ -494,9 +495,9 @@ section.bungkus {
 }
 #paket p {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-top: 8px;
   float: left;
-  font-size: 25px;
+  font-size: 20px;
 }
 #paket p:before {
   content: "Rp.";
@@ -510,7 +511,6 @@ section.bungkus {
   #border-bottom: 1px solid white;
 }
 #paket li {
-  font-family: 'Armata', sans-serif;
   list-style: none;
   line-height: 25px;
   font-weight: bold;
@@ -521,7 +521,7 @@ section.bungkus {
 }
 #paket section {
   color: #fff;
-  padding: 5px 5px 15px 5px;
+  padding: 5px;
   overflow: hidden;
 }
 #paket .wrap {
