@@ -100,6 +100,7 @@ section.bungkus{
 #slide{
 	@include main-font;
 	h2{
+		font-size: 20px;
 		color: $mainColor;
 		margin: 0;
 	}
