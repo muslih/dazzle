@@ -232,6 +232,13 @@ section.bungkus{
 /*     aside
 /*******************************************************************************/
 aside{
+	img{
+		@include main-transition;
+		opacity:0.7;
+		&:hover{
+			opacity:1;
+		}
+	}
 	margin: $mainSectionMargin;
 	overflow: hidden;
 	h2{
@@ -263,21 +270,19 @@ aside{
 /*******************************************************************************/
 footer{
 	border-top: $mainBorder;
+	img{
+		@include main-transition;
+		opacity:0.7;
+		&:hover{
+			opacity:1;
+		}
+	}
 	.kredit{
 		text-align: right;
 		float: right;
-
 		li{
 			display: inline-table;
 			margin-left: 15px;
-			img{
-				@include main-transition;
-				opacity:0.7;
-				float: left;
-				&:hover{
-					opacity:1;
-				}
-			}
 
 			&:first-child{
 				margin-left: 0;

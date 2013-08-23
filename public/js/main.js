@@ -1,7 +1,6 @@
 (function() {
   $(function() {
     var url;
-
     url = window.location.pathname;
     console.log(url);
     return $('nav a').each(function() {
