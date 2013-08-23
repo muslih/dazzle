@@ -214,6 +214,7 @@ section.bungkus{
 	background: #fff;
 	img{
 		@include transition-duration(1s);
+		vertical-align: middle;
 		opacity:0.5;
 		margin: 0 5px;
 	}
