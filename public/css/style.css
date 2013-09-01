@@ -347,7 +347,7 @@ a {
   color: #d80000;
 }
 
-p {
+p, #fitur li {
   font-size: 14px;
   line-height: 20px;
 }
@@ -461,7 +461,7 @@ section.bungkus {
   color: #d80000;
   margin: 0;
 }
-#slide p {
+#slide p, #slide #fitur li, #fitur #slide li {
   font-size: 15px;
   line-height: 25px;
 }
@@ -494,16 +494,16 @@ section.bungkus {
 #paket h2 span {
   color: white;
 }
-#paket p {
+#paket p, #paket #fitur li, #fitur #paket li {
   font-weight: bold;
   margin-top: 8px;
   float: left;
   font-size: 20px;
 }
-#paket p:before {
+#paket p:before, #paket #fitur li:before, #fitur #paket li:before {
   content: "Rp.";
 }
-#paket p span {
+#paket p span, #paket #fitur li span, #fitur #paket li span {
   color: white;
   font-size: 17px;
 }
@@ -549,6 +549,11 @@ section.bungkus {
   background: #e6e6e6;
 }
 
+#fitur ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
 /*******************************************************************************/
 /*     fitur
 /*******************************************************************************/
@@ -559,7 +564,7 @@ section.bungkus {
   color: #d80000;
   margin: 5px 0;
 }
-#fitur p {
+#fitur p, #fitur li {
   margin-top: 0;
 }
 #fitur button {
@@ -616,7 +621,7 @@ aside h2 {
 aside li {
   list-style: none;
 }
-aside p, aside ul {
+aside p, aside #fitur li, #fitur aside li, aside ul {
   margin: 5px 0;
 }
 aside ul {
