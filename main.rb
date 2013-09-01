@@ -8,17 +8,17 @@ get '/' do
 end
 
 get '/kontak' do
-	@title = "Kontak"
+	@title = "Kontak Dazzlespeed"
 	erb :contact
 end
 
 get '/fitur' do
-	@title = "Fitur Paduhost"
+	@title = "Fitur Dazzlespeed"
 	erb :fitur
 end
 
 get '/hosting' do
-	@title = "Paket Hosting"
+	@title = "Paket Dazzlespeed"
 	erb :hosting
 end
 
